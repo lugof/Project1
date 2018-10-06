@@ -1,14 +1,73 @@
-=<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <!-- to ensure proper rendering and touch zooming in Mobil Phones -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+  <!--  <meta http-equiv="X-UA-Compatible" content="ie=edge">  -->
+    <title>Project 1-Fellowees- Carousel bootstrap</title>
+    <!-- Bootstrap CDN -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <!-- jQuery Reference -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> 
+    <!-- jQuery and Popper for Bootstrap to work properly-->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <!-- Css link -->
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <!-- Firebase Reference -->
+    <script src="https://www.gstatic.com/firebasejs/5.5.2/firebase.js"></script>
+    
+    <!-- Moment.js Reference -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.22.2/moment.min.js"></script>   
 </head>
 <body>
-    
-
-    
+    <!-- responsive carousel using Bootstrap --> 
+    <br />
+    <div class="container">
+        <div class ="row">
+            <div class="col-xs-12 col-md-offset-2">
+                <div id="imageCarousel" class="carousel slide" data-interval="2000"
+                     data-ride="carousel" data-pause="hover" data-wrap="true">
+                    <ol class="carousel-indicators" >
+                        <li data-target="#imageCarousel" data-slide-to="0" class="active"></li>
+                        <li data-target="#imageCarousel" data-slide-to="1"></li>
+                        <li data-target="#imageCarousel" data-slide-to="2"></li>
+                        <li data-target="#imageCarousel" data-slide-to="3"></li>
+                    </ol>
+                </div>
+            </div>        
+        </div>
+        <div class="carousel-inner">
+            <div class="item active">
+                <div class="row">
+                    <div class="col-xs-4">
+                        <img src="images/arianagrande.jpg" class="img-responsive">
+                        <div class="carousel-caption">
+                        </div>
+                    </div>
+                    <div class="col-xs-4">
+                        <img src="images/cristianoronaldo.jpg" class="img-responsive">
+                        <div class="carousel-caption">
+                    </div>
+                    <div class="col-xs-4">
+                            <img src="images/justinbieber.jpg" class="img-responsive">
+                            <div class="carousel-caption">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <a class="carrousel-control left" href="#imageCarousel" data-slide="prev" role="button"><span class="glyphicon glyphicon-chevron-left"></span>
+        </a>
+        <a class="carrousel-control right" href="#imageCarousel" data-slide="next" role="button"><span class="glyphicon glyphicon-chevron-right" ></span>
+        </a>
+    </div> <!-- carousel ends-->
+    <!-- AJAX Reference -->         
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>    
+    <!-- Javascript Reference -->  
+    <script src="javascript/project1.js"></script>     
 </body>
 </html>
