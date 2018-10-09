@@ -1,7 +1,95 @@
-/* I am connected */
-#slider .item {
-   height: 400px;
+/*header */
+header {
+  height: 30px;
+  background-color:oldlace;
+  height: 40px;
 }
-#slide1 {
-   background:url("images/arianagrande.jpg") center no-repeat;
+#icons {
+  float:left; 
+} 
+h1 {
+  
+  font-size: 30px;
+  font-style: italic;
+  font-family: fantasy;
+  color:rgb(36, 29, 29);
 }
+#f {
+  margin-left:10px;
+  float:left;
+}
+
+.imgsHeader {
+  float:left;
+  margin-left:20px;
+}
+
+#carWrapper {
+   width: 80% !important;
+   height: 260px;
+   margin:15px auto;
+   background-color:rgb(211, 80, 102);   
+};
+.imgCar  {
+  margin:15px auto;
+} 
+#divsCar {
+  margin:0 auto;
+  padding:15px;
+}
+a img {
+  border:2px solid black;
+}
+
+  /* search bar */
+ input[type=text]  {
+    margin:0;
+    height: 30px;
+    font-size: 17px;
+    border: none;
+  }
+   .search-container  {
+    width: 280px;
+    margin:0 auto;
+    padding: 6px 12px;
+    background: rgb(224, 155, 155);
+    font-size: 17px;
+    border: none;
+    cursor: pointer;
+  }
+  .search-container button:hover {
+    background: #ccc;
+  }
+  imgButton {
+    margin:0 auto;
+  }
+  form input, button {
+    height: 36px;
+  }
+
+  /* Boxes with retrieved info */
+  #infoContainer {
+    width:800px;
+    margin:0 auto;
+    margin-top:15px;
+  }
+  p {
+    background-color: bisque;
+    line-height: 40px;
+  }
+
+ /* Boxes with sugestions */ 
+ .sugFamous {
+   width:100%;
+   height: 100px;
+   background-color: antiquewhite;
+ }
+
+  
+ 
+  
+  
+  
+  
+ 
+ 
