@@ -1,35 +1,36 @@
 /*header */
 header {
-  height: 30px;
-  background-color:oldlace;
-  height: 40px;
+  width: 100%;
+  margin:0;
 }
-#icons {
-  float:left; 
+#navHeader, #navInner {
+  background-color:oldlace !important;
+  height: 80px ;
+} 
+#navHeader {
+  padding: 0 !important;
 } 
 h1 {
-  
-  font-size: 30px;
+  clear: both;
+  font-size: 50px;
+  padding-left: 300px !important;
   font-style: italic;
   font-family: fantasy;
-  color:rgb(36, 29, 29);
+  letter-spacing: 1rem;
+  color:rgb(104, 53, 53);
 }
-#f {
+#f {         /* img of the three kids running */ 
   margin-left:10px;
   float:left;
+  margin-top:4px;
 }
-
-.imgsHeader {
-  float:left;
-  margin-left:20px;
-}
-
+ /*---- carousel  ----*/
 #carWrapper {
-   width: 80% !important;
+   width: 79.3%;
    height: 260px;
-   margin:15px auto;
-   background-color:rgb(211, 80, 102);   
-};
+   margin:100px auto;
+   margin-bottom: 0;
+}
 .imgCar  {
   margin:15px auto;
 } 
@@ -37,10 +38,14 @@ h1 {
   margin:0 auto;
   padding:15px;
 }
-a img {
-  border:2px solid black;
-}
+.linkCar img:hover {
+  border:6px solid rgb(100, 8, 8);
+  border-radius: 15px;
 
+}
+#divsCar img{
+  border-radius: 15px;
+}
   /* search bar */
  input[type=text]  {
     margin:0;
@@ -48,25 +53,28 @@ a img {
     font-size: 17px;
     border: none;
   }
-   .search-container  {
-    width: 280px;
-    margin:0 auto;
-    padding: 6px 12px;
-    background: rgb(224, 155, 155);
-    font-size: 17px;
-    border: none;
+  #searchNav {
+    width:280px;
+    height: 60px;
+    margin:15px auto;
+    border-radius: 10px;
+    background-color: rgba(196, 79, 100, 0.644) !important;
+    padding:0;
     cursor: pointer;
   }
-  .search-container button:hover {
-    background: #ccc;
+  #buttonSearch {
+    background-color: rgb(253, 247, 247) !important;
   }
-  imgButton {
-    margin:0 auto;
+  #buttonSearch:hover {
+    cursor: pointer; 
   }
-  form input, button {
-    height: 36px;
+  #boxAndButton {
+    margin:0px auto;
   }
-
+  input {
+     width:212px !important;
+  }
+  
   /* Boxes with retrieved info */
   #infoContainer {
     width:800px;
@@ -75,14 +83,101 @@ a img {
   }
   p {
     background-color: bisque;
-    line-height: 40px;
+    line-height: 30px;
+    text-align: center;
   }
-
  /* Boxes with sugestions */ 
+  h2 {
+    background-color: rgb(253, 247, 247);
+    color:rgb(100, 8, 8);
+    width:220px;
+    margin:15px auto;
+    text-align: center;
+  }
  .sugFamous {
-   width:100%;
+    background-color: antiquewhite;
+  }
+ #imgSug:hover {
+    border:4px solid rgb(102, 56, 56); 
+    border-radius: 10px;
+    cursor: pointer;
+ }
+ /* responsive feature @ 600 */
+ @media screen and (max-width:600px)  { 
+ #f  {
+  height: 60px; 
+  margin:0;
+ }
+ h1 {
+  font-size: 40px;
+  width:200px;
+  padding-left: 30px !important;
+}
+#carWrapper {
+  width:78%;
+  height: 180px;
+  margin-top:85px;
+  margin-bottom:0;
+}
+#divsCar img{
+  width: 146px;
+  height: 140px;
+  margin-bottom: 0;
+} 
+#searchNav {
+  width:280px;
+  height: 60px;
+  margin:10px auto;
+  margin-top:0; 
+ }
+ #infoContainer {
+  width:80%;
+  margin:0 auto;
+  margin-top:15px;
+}
+}
+ /* responsive feature @ 480 */
+ @media screen and (max-width:480px)  { 
+  #f  {
+   height: 40px; 
+   margin:0;
+   width:50px;
+  }
+  h1 {
+   font-size: 40px;
+   width:200px;
+   padding-left: 10px !important;
+   letter-spacing: .5rem;
+ }
+ #navInner {
+   padding:0;
+   padding-left:5px;
+ }
+ #carWrapper {
+   width:78%;
+   height: 150px;
+   margin-top:85px;
+   margin-bottom:0;
+ }
+ #divsCar img{
+   width: 86px;
    height: 100px;
-   background-color: antiquewhite;
+   margin-bottom: 0;
+ } 
+ #searchNav {
+   width:280px;
+   margin:10px auto;
+   margin-top:0; 
+  }
+  #f {
+    width:50px;
+  }
+  #yt {
+    width:30px;
+  }
+  #tw,#N {
+    width:28px;
+  }
  }
 
   
@@ -91,5 +186,4 @@ a img {
   
   
   
- 
  

@@ -6,7 +6,9 @@ $(document).ready(function()  {
       infinite: true,
       speed: 100,
       slidesToShow: 4,
-      slidesToScroll: 4,
+      slidesToScroll: 3,
+      centerMode:false,
+      variableWidth: true,
       responsive: [
       {
          breakpoint: 1024,

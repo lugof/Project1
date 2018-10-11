@@ -13,47 +13,51 @@
     <link rel="stylesheet" type="text/css" href="css/style.css"/> 
     <!-- Firebase Reference -->
     <script src="https://www.gstatic.com/firebasejs/5.5.2/firebase.js"></script>
-<!-- Add the new slick-theme.css if you want the default styling -->
-<link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
+    <!-- Added the new slick-theme.css to get the default styling -->
+    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
 </head>
 <body background="images/backgroundWall.jpeg">
     <header>
-        <div id="icons">
-            <img id="f" src="images/fallowers2.jpg" width="32px" height="32px">
-            <div id="imgsHeader">
-                <img id="yt" src="images/youTube.jpg" width="30px" height="30px">
-                <img id="tw" src="images/tweeter.jpg" width="30px" height="30px">
-                <img id="N" src="images/newsAPI.png" width="30px" height="30px">
-            </div>
-        </div>
-        <h1>Fellowees</h1>;
-
+        <div class="fixed-top">
+            <nav id="navHeader" class="navbar navbar-expand-lg navbar-light bg-light">
+                <nav id="navInner" class="navbar navbar-light bg-light">
+                   <div id="follAndSM">
+                        <img id="f" src="images/followers2.jpg" width="80px" height="50" alt="">
+                        <img id="yt" src="images/youTube.jpg" width="40px" height="40px">
+                        <img id="tw" src="images/tweeter.jpg" width="40px" height="40px">
+                        <img id="N" src="images/newsAPI.png" width="40px" height="40px">    
+                    </div>
+                    <h1>Fellowees</h1>
+                </nav>
+            </nav>
+        </div>                          
     </header>
      <!-- starts the carousel -->
-    <div id="carWrapper" style="background-color: brown">
+    <div id="carWrapper">
         <div id="divsCar" class="responsive">
-            <div><a class="imgCar" href="#" alt="ArianaGrande"><img src="images/arianagrande.jpg" width="220px" height="220px"></a></div>
-            <div><a class="imgCar" href="#" alt="CristianRonaldo"><img src="images/cristianoronaldo.jpg" width="220px" height="220px"></a></div>
-            <div><a class="imgCar" href="#" alt="JustinBieber"><img src="images/justinbieber.jpg" width="220px" height="220px"></a></div>
-            <div><a class="imgCar" href="#" alt="KarryPerry"><img src="images/katyperry.jpg" width="220px" height="220px"></a></div>
-            <div><a class="imgCar" href="#" alt="LadyGaga"><img src="images/ladygaga.jpg"width="220px" height="220px"></a></div>
-            <div><a class="imgCar" href="#" alt="Rihanna"><img src="images/rihanna.jpg" width="220px" height="220px"></a></div>
-            <div><a class="imgCar" href="#" alt="KylieJenner"><img src="images/kyliejenner.jpg" width="220px" height="220px"></a></div>
-            <div><a class="imgCar" href="#" alt="SelenaGomez"><img src="images/selenagomez.jpg"width="220px" height="220px"></a></div>
-            <div><a class="imgCar" href="#" alt="Shakira"><img src="images/shakira.jpg" width="220px" height="220px"></a></div>
-            <div><a class="imgCar" href="#" alt="Beyonce"><img src="images/beyonce.png" width="220px" height="220px"></a></div>
+            <div><a class="linkCar" href="#" alt="ArianaGrande"><img src="images/arianagrande.jpg" width="220px" height="220px"></a></div>
+            <div><a class="linkCar" href="#" alt="CristianRonaldo"><img src="images/cristianoronaldo.jpg" width="220px" height="220px"></a></div>
+            <div><a class="linkCar" href="#" alt="JustinBieber"><img src="images/justinbieber.jpg" width="220px" height="220px"></a></div>
+            <div><a class="linkCar" href="#" alt="KarryPerry"><img src="images/katyperry.jpg" width="220px" height="220px"></a></div>
+            <div><a class="linkCar" href="#" alt="LadyGaga"><img src="images/ladygaga.jpg"width="220px" height="220px"></a></div>
+            <div><a class="linkCar" href="#" alt="Rihanna"><img src="images/rihanna.jpg" width="220px" height="220px"></a></div>
+            <div><a class="linkCar" href="#" alt="KylieJenner"><img src="images/kyliejenner.jpg" width="220px" height="220px"></a></div>
+            <div><a class="linkCar" href="#" alt="SelenaGomez"><img src="images/selenagomez.jpg"width="220px" height="220px"></a></div>
+            <div><a class="linkCar" href="#" alt="Shakira"><img src="images/shakira.jpg" width="220px" height="220px"></a></div>
+            <div><a class="linkCar" href="#" alt="Beyonce"><img src="images/beyonce.png" width="220px" height="220px"></a></div>
         </div>
     </div>   <!-- end of carousel --> 
      
     <!-- search box--> 
-    <div class="topnav">
-            <div class="search-container">
-              <form >
-                <input type="text" placeholder="Search.." name="search">
+    <nav id="searchNav" class="navbar navbar-expand-lg navbar-light bg-light">
+        <div id="boxAndButton">
+            <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
                 <button type="submit"><i class="fa fa-search"></i><img id="imgButton" src="images/search-icon.png" width="30px" height="30px" ></button>
-              </form>
-            </div>
-    </div>  <!-- end of search box -->
+            </form>
+        </div>        
+    </nav>  <!-- end of search box -->
+
     <!-- container for extracted data -->
     <div id="infoContainer">
        <div class="row">
@@ -66,60 +70,30 @@
             <div class="col-sm-12">
                     <p>-- Content here -</p>
             </div>
-        </div>
-    </div> <!-- end of container for extracted data --> 
+        </div> 
+    </div> <!-- end of container for extracted data -->
 
-    <!-- container for sugestions -->
+    <span id="sugTile"><h2>What about?...</h2></span>
+    <!-- starts container for extracted sugestions -->
     <div id="sugContainer">
         <div class="row">
             <div class="col-sm-2">
-                <div>
-                    <div></div>
+                <span class="border">
+                    <a href="#"><img id="imgSug" src="images/kyliejenner.jpg" width="100%" height="100%" class="rounded-top"></a>
                     <p class="sugFamous">Name</p>
-                </div>
+                </span>
             </div>
-            <div class="col-sm-2">
-                <div>
-                    <div></div>
-                    <p class="sugFamous">Name</p>
-                </div>
-            </div>
-            <div class="col-sm-2">
-                <div>
-                    <div></div>
-                    <p class="sugFamous">Name</p>
-                </div>
-            </div>
-            <div class="col-sm-2">
-                <div>
-                    <div></div>
-                    <p class="sugFamous">Name</p>
-                </div>
-            </div>
-            <div class="col-sm-2">
-                    <div>
-                        <div></div>
-                        <p class="sugFamous">Name</p>
-                    </div>
-                </div>
-                <div class="col-sm-2">
-                    <div>
-                        <div></div>
-                        <p class="sugFamous">Name</p>
-                    </div>
-                </div>
-            </div>                       
         </div>
     </div> <!-- end of container for sugestions --> 
 
-
-<!-- jQuery and Popper for Bootstrap to work properly (jQuery first, then Popper.js, then Bootstrap JS)-->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
-<!-- <script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>  -->
-<!-- jQuery Reference -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-<script type="text/javascript" src="slick/slick.min.js"></script>
-<script src="javascript/project1.js"></script>
+    <!-- jQuery and Popper for Bootstrap to work properly (jQuery first, then Popper.js, then Bootstrap JS)-->
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script> 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <!-- jQuery Reference -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script type="text/javascript" src="slick/slick.min.js"></script>
+    <!-- JS Reference -->
+    <script src="javascript/project1.js"></script>
 </body>
 </html>
