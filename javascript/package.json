@@ -1,0 +1,28 @@
+{
+  "name": "project1",
+  "version": "8.12.0",
+  "description": "testing tweet json",
+  "main": "project1.js",
+  "scripts": {
+    "start": "node Project1.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lugof/Project1.git"
+  },
+  "keywords": [
+    "node"
+  ],
+  "author": "deepak mehra",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lugof/Project1/issues"
+  },
+  "homepage": "https://github.com/lugof/Project1#readme",
+  "dependencies": {
+    "express": "^4.16.3",
+    "javascript": "^1.0.0",
+    "twit": "^2.2.11"
+  }
+}

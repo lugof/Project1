@@ -21,6 +21,9 @@
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <!-- Firebase Reference -->
     <script src="https://www.gstatic.com/firebasejs/5.5.2/firebase.js"></script>
+    <script data-main="javascript/project1" src="javascript/require.js"></script>
+    
+    
     
     <!-- Moment.js Reference -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.22.2/moment.min.js"></script>   
@@ -33,7 +36,7 @@
     <div class="container">
         <div class ="row">
             <div class="col-xs-12 col-md-offset-2">
-                <div id="imageCarousel" class="carousel slide" data-interval="2000"
+                <div id="carouselExampleControls" class="carousel slide" data-interval="2000"
                      data-ride="carousel" data-pause="hover" data-wrap="true">
                     <ol class="carousel-indicators" >
                         <li data-target="#imageCarousel" data-slide-to="0" class="active"></li>
@@ -44,7 +47,7 @@
                 </div>
             </div>        
         </div>
-        <div class="carousel-inner">
+        <div class="carousel slide">
             <div class="item active">
                 <div class="row">
                     <div class="col-xs-4">
