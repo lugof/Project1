@@ -1,3 +1,8 @@
+html, body {
+  width:100%;
+  height: 100%
+}
+
 /*header */
 header {
   width: 100%;
@@ -6,6 +11,7 @@ header {
 #navHeader, #navInner {
   background-color:oldlace !important;
   height: 80px ;
+  border-bottom:4px solid rgb(104, 53, 53);
 } 
 #navHeader {
   padding: 0 !important;
@@ -74,14 +80,13 @@ h1 {
   input {
      width:212px !important;
   }
-  
   /* Boxes with retrieved info */
   #infoContainer {
     width:800px;
     margin:0 auto;
     margin-top:15px;
   }
-  p {
+  .pInfoContainer {
     background-color: bisque;
     line-height: 30px;
     text-align: center;
@@ -94,14 +99,40 @@ h1 {
     margin:15px auto;
     text-align: center;
   }
- .sugFamous {
-    background-color: antiquewhite;
+  .sugFamous {
+    background-color:rgba(196, 79, 100, 0.644);
+    color:rgb(253, 247, 247);
+    text-align: center;
   }
- #imgSug:hover {
+  .border {
+    margin-bottom:10px;
+  }
+  #imgSug:hover {
     border:4px solid rgb(102, 56, 56); 
     border-radius: 10px;
     cursor: pointer;
- }
+  }
+   /* needed for the footer */
+  main {
+    width:100%;
+    height: inherit;
+    margin: 0 auto;
+  }
+  main:after {
+    content: "";
+    display: block;
+    height: 30px;
+    background:oldlace;
+  }
+  footer {
+    text-align: center;
+    background:oldlace;
+    border-top:4px solid rgb(104, 53, 53);
+    vertical-align: center;
+    margin-top:40px;
+    height: 30px;
+  }
+  
  /* responsive feature @ 600 */
  @media screen and (max-width:600px)  { 
  #f  {
