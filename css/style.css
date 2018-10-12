@@ -8,7 +8,7 @@ header {
   width: 100%;
   margin:0;
 }
-#navHeader, #navInner {
+#navHeader {
   background-color:oldlace !important;
   height: 80px ;
   border-bottom:4px solid rgb(104, 53, 53);
