@@ -1,0 +1,220 @@
+html, body {
+  width:100%;
+  height: 100%
+}
+
+/*header */
+header {
+  width: 100%;
+  margin:0;
+}
+#navHeader {
+  background-color:oldlace !important;
+  height: 80px ;
+  border-bottom:4px solid rgb(104, 53, 53);
+} 
+#navHeader {
+  padding: 0 !important;
+} 
+h1 {
+  clear: both;
+  font-size: 50px;
+  padding-left: 300px !important;
+  font-style: italic;
+  font-family: fantasy;
+  letter-spacing: 1rem;
+  color:rgb(104, 53, 53);
+}
+#f {         /* img of the three kids running */ 
+  margin-left:10px;
+  float:left;
+  margin-top:4px;
+}
+ /*---- carousel  ----*/
+#carWrapper {
+   width: 79.3%;
+   height: 260px;
+   margin:100px auto;
+   margin-bottom: 0;
+}
+.imgCar  {
+  margin:15px auto;
+} 
+#divsCar {
+  margin:0 auto;
+  padding:15px;
+}
+.linkCar img:hover {
+  border:6px solid rgb(100, 8, 8);
+  border-radius: 15px;
+
+}
+#divsCar img{
+  border-radius: 15px;
+}
+  /* search bar */
+ input[type=text]  {
+    margin:0;
+    height: 30px;
+    font-size: 17px;
+    border: none;
+  }
+  #searchNav {
+    width:280px;
+    height: 60px;
+    margin:15px auto;
+    border-radius: 10px;
+    background-color: rgba(196, 79, 100, 0.644) !important;
+    padding:0;
+    cursor: pointer;
+  }
+  #buttonSearch {
+    background-color: rgb(253, 247, 247) !important;
+  }
+  #buttonSearch:hover {
+    cursor: pointer; 
+  }
+  #boxAndButton {
+    margin:0px auto;
+  }
+  input {
+     width:212px !important;
+  }
+  /* Boxes with retrieved info */
+  #infoContainer {
+    width:800px;
+    margin:0 auto;
+    margin-top:15px;
+  }
+  .pInfoContainer {
+    background-color: bisque;
+    line-height: 30px;
+    text-align: center;
+  }
+ /* Boxes with sugestions */ 
+  h2 {
+    background-color: rgb(253, 247, 247);
+    color:rgb(100, 8, 8);
+    width:220px;
+    margin:15px auto;
+    text-align: center;
+  }
+  .sugFamous {
+    background-color:rgba(196, 79, 100, 0.644);
+    color:rgb(253, 247, 247);
+    text-align: center;
+  }
+  .border {
+    margin-bottom:10px;
+  }
+  #imgSug:hover {
+    border:4px solid rgb(102, 56, 56); 
+    border-radius: 10px;
+    cursor: pointer;
+  }
+   /* needed for the footer */
+  main {
+    width:100%;
+    height: inherit;
+    margin: 0 auto;
+  }
+  main:after {
+    content: "";
+    display: block;
+    height: 30px;
+    background:oldlace;
+  }
+  footer {
+    text-align: center;
+    background:oldlace;
+    border-top:4px solid rgb(104, 53, 53);
+    vertical-align: center;
+    margin-top:40px;
+    height: 30px;
+  }
+  
+ /* responsive feature @ 600 */
+ @media screen and (max-width:600px)  { 
+ #f  {
+  height: 60px; 
+  margin:0;
+ }
+ h1 {
+  font-size: 40px;
+  width:200px;
+  padding-left: 30px !important;
+}
+#carWrapper {
+  width:78%;
+  height: 180px;
+  margin-top:85px;
+  margin-bottom:0;
+}
+#divsCar img{
+  width: 146px;
+  height: 140px;
+  margin-bottom: 0;
+} 
+#searchNav {
+  width:280px;
+  height: 60px;
+  margin:10px auto;
+  margin-top:0; 
+ }
+ #infoContainer {
+  width:80%;
+  margin:0 auto;
+  margin-top:15px;
+}
+}
+ /* responsive feature @ 480 */
+ @media screen and (max-width:480px)  { 
+  #f  {
+   height: 40px; 
+   margin:0;
+   width:50px;
+  }
+  h1 {
+   font-size: 40px;
+   width:200px;
+   padding-left: 10px !important;
+   letter-spacing: .5rem;
+ }
+ #navInner {
+   padding:0;
+   padding-left:5px;
+ }
+ #carWrapper {
+   width:78%;
+   height: 150px;
+   margin-top:85px;
+   margin-bottom:0;
+ }
+ #divsCar img{
+   width: 86px;
+   height: 100px;
+   margin-bottom: 0;
+ } 
+ #searchNav {
+   width:280px;
+   margin:10px auto;
+   margin-top:0; 
+  }
+  #f {
+    width:50px;
+  }
+  #yt {
+    width:30px;
+  }
+  #tw,#N {
+    width:28px;
+  }
+ }
+
+  
+ 
+  
+  
+  
+  
+ 
