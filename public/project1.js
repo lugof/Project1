@@ -104,6 +104,7 @@ $(document).ready(function () {
 
     var carouselItem = $("<div>").addClass("carousel-item ").attr("id", "firebaseImg");
     carouselItem.attr("data-name",searchTerm);
+    watchList.push(searchTerm);
     var carouselLink = $("<a>").attr("href", link).addClass("carouselLink");
     var carouselImage = $("<img>").attr("src", image).addClass("d-block w-100 carouselImg");
     var carouselText = $("<div>").text(title).attr("id", "recentNewsHeadline");

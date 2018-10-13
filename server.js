@@ -3,8 +3,9 @@
 // npm install express --save
 // npm install socket.io --save
 // npm install twit -- save
-require('dotenv').load();
 var watchList = [];
+require('dotenv').load();
+
 var express = require('express')
   , app = express()
   , http = require('http')
