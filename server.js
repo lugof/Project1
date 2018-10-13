@@ -24,8 +24,8 @@ res.sendFile(__dirname + '/index.html');
 });
 
 
-watchList = ["sony", "canelo alvarez", "benito juarez", "katy perry","jay z"];
-console.log("este es el console.log de arreglo 3 "+arr3);
+watchList = ["sony", "canelo alvarez", "selena gomez", "katy perry","jay z", "lady gaga"];
+
 
  var T = new Twit({
     consumer_key:         process.env.CONSUMER_KEY
