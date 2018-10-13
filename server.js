@@ -24,7 +24,12 @@ res.sendFile(__dirname + '/index.html');
 });
 
 
+for(var i=0;i<20; i++){
+ var y= $("#firebaseImg"+i).attr("data-name");
+  watchList.push(y);
+  console.log("watchlist tiene: "+watchList);
 
+}
 
 
 watchList = ["sony", "canelo alvarez", "benito juarez", "katy perry", ];
