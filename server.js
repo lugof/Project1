@@ -23,13 +23,9 @@ app.get('/', function (req, res) {
 res.sendFile(__dirname + '/index.html');
 });
 
-$(".button").on("click", function(event) {
-  event.preventDefault();
-var searchName = $("#searchTerm").val();
-console.log("mostrando el search term " +searchTerm);
-watchList.push(searchName);
-console.log("mostrando el arreglo :"+ watchList);
-});
+
+
+
 
 watchList = ["sony", "canelo alvarez", "benito juarez", "katy perry", ];
 

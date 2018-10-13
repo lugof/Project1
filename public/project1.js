@@ -1,4 +1,4 @@
-
+var x=0;
 // Initialize Firebase
 var config = {
   apiKey: "AIzaSyCLELJ2XRqID1272eMpipcMnkGzOSNMQng",
@@ -101,8 +101,9 @@ $(document).ready(function () {
     var image = childSnapshot.val().firstImage;
     var title = childSnapshot.val().firstTitle;
     var link = childSnapshot.val().link;
-
-    var carouselItem = $("<div>").addClass("carousel-item ").attr("id", "firebaseImg");
+    
+    var carouselItem = $("<div>").addClass("carousel-item ").attr("id", "firebaseImg"+x);
+    x++;
     carouselItem.attr("data-name",searchTerm);
     var carouselLink = $("<a>").attr("href", link).addClass("carouselLink");
     var carouselImage = $("<img>").attr("src", image).addClass("d-block w-100 carouselImg");
