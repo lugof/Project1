@@ -1,4 +1,12 @@
-// To begin, run npm init, and fill out the information
+
+
+var watchList = ["sony", "canelo alvarez", "benito juarez", "katy perry"];
+for(var i=0;i<20; i++){
+  var y= $("#firebaseImg"+i).attr("data-name");
+   watchList.push(y);
+   console.log("watchlist tiene: "+watchList);
+ 
+ }// To begin, run npm init, and fill out the information
 // To install the needed packages, run in the terminal
 // npm install express --save
 // npm install socket.io --save
@@ -24,15 +32,10 @@ res.sendFile(__dirname + '/index.html');
 });
 
 
-for(var i=0;i<20; i++){
- var y= $("#firebaseImg"+i).attr("data-name");
-  watchList.push(y);
-  console.log("watchlist tiene: "+watchList);
-
-}
 
 
-watchList = ["sony", "canelo alvarez", "benito juarez", "katy perry", ];
+
+
 
  var T = new Twit({
     consumer_key:         process.env.CONSUMER_KEY
