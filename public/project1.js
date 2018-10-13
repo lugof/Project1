@@ -105,6 +105,8 @@ $(document).ready(function () {
     var carouselItem = $("<div>").addClass("carousel-item ").attr("id", "firebaseImg"+x);
     x++;
     carouselItem.attr("data-name",searchTerm);
+    arr3.push((carouselItem).attr("data-name"));
+    console.log("este es el console.log de arr3 :"+arr3);
     var carouselLink = $("<a>").attr("href", link).addClass("carouselLink");
     var carouselImage = $("<img>").attr("src", image).addClass("d-block w-100 carouselImg");
     var carouselText = $("<div>").text(title).attr("id", "recentNewsHeadline");

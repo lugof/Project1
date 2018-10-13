@@ -24,7 +24,7 @@ res.sendFile(__dirname + '/index.html');
 });
 
 
-watchList = ["sony", "canelo alvarez", "benito juarez", "katy perry", ];
+watchList = ["sony", "canelo alvarez", "benito juarez", "katy perry","jay z", "daniel cormier" ];
 
  var T = new Twit({
     consumer_key:         process.env.CONSUMER_KEY
