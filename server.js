@@ -23,27 +23,15 @@ app.get('/', function (req, res) {
 res.sendFile(__dirname + '/index.html');
 });
 
-
-/*var config = {
-  apiKey: "AIzaSyCLELJ2XRqID1272eMpipcMnkGzOSNMQng",
-  authDomain: "project-1-440ef.firebaseapp.com",
-  databaseURL: "https://project-1-440ef.firebaseio.com",
-  projectId: "project-1-440ef",
-  storageBucket: "project-1-440ef.appspot.com",
-  messagingSenderId: "869209601087"
-};
-firebase.initializeApp(config);
-var database = firebase.database();
-
-
-database.ref("searches").limitToLast(10).on("child_added", function (childSnapshot) {
-  // Store everything into a variable.
-  var searchTerm = childSnapshot.val().searchTerm;
-watchList = ['Katy Perry', searchTerm ];
-
+$(".button").on("click", function(event) {
+  event.preventDefault();
+var searchName = $("#searchTerm").val();
+console.log("mostrando el search term " +searchTerm);
+watchList.push(searchName);
+console.log("mostrando el arreglo :"+ watchList);
 });
-*/
-watchList = ['Katy Perry', "eminem", "coldplay" ];
+
+watchList = ["sony", "canelo alvarez", "benito juarez", "katy perry", ];
 
  var T = new Twit({
     consumer_key:         process.env.CONSUMER_KEY

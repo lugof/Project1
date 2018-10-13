@@ -10,7 +10,7 @@ $(function(){
     
   // $('body').append('<div class="tweet">' + tweet + '</div>')
    arr2.push(tweet);
-   console.log("nuestro array tiene: "+watchList);
+  
   
     
 });
