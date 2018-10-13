@@ -3,7 +3,7 @@
 // npm install express --save
 // npm install socket.io --save
 // npm install twit -- save
-var watchList = [];
+
 require('dotenv').load();
 
 var express = require('express')
@@ -47,7 +47,7 @@ watchList = ['Katy Perry', searchTerm ];
 
 watchList.push(searchTerm);
 
-watchList = ['Katy Perry', "eminem", "coldplay" ];
+
 
  var T = new Twit({
     consumer_key:         process.env.CONSUMER_KEY
