@@ -1,6 +1,5 @@
 
 // Initialize Firebase
-
 var config = {
   apiKey: "AIzaSyCLELJ2XRqID1272eMpipcMnkGzOSNMQng",
   authDomain: "project-1-440ef.firebaseapp.com",
@@ -11,7 +10,7 @@ var config = {
 };
 firebase.initializeApp(config);
 var database = firebase.database();
-
+var searchTerm;
 
 
 function nytAPI() {
@@ -105,7 +104,6 @@ $(document).ready(function () {
 
     var carouselItem = $("<div>").addClass("carousel-item ").attr("id", "firebaseImg");
     carouselItem.attr("data-name",searchTerm);
-    
     var carouselLink = $("<a>").attr("href", link).addClass("carouselLink");
     var carouselImage = $("<img>").attr("src", image).addClass("d-block w-100 carouselImg");
     var carouselText = $("<div>").text(title).attr("id", "recentNewsHeadline");
