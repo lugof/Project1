@@ -43,7 +43,7 @@ watchList = ['Katy Perry', searchTerm ];
 
 });
 */
-watchList = ['Katy Perry'];
+watchList = ['Katy Perry', "eminem", "coldplay", "cartel de santa", "lady gaga", "selena gomez" ];
 
  var T = new Twit({
     consumer_key:         process.env.CONSUMER_KEY
