@@ -1,0 +1,339 @@
+ body {
+  width:100%;
+  height: 100%;
+  margin:0;
+  background-color: rgba(177, 168, 87, 0.404);
+}
+a:link {
+  text-decoration: none;
+}
+
+        /*header */
+ .fixed-top {
+  border-bottom:4px solid rgb(104, 53, 53);  
+ }       
+header {
+  width: 100%;
+  margin:0;
+  height: 80px;
+  background-color: oldlace !important;
+}
+ #navHeader {
+   width:100%;
+  background-color: oldlace !important; 
+  height: 76px;
+ } 
+
+h1 {
+  position: absolute;
+  float: left !important;
+  font-size: 50px;
+  padding-left: 500px !important;
+  font-style: italic;
+  font-family:'Permanent Marker', cursive;
+  letter-spacing: 1rem;
+  color:rgb(104, 53, 53);
+}
+#f { /* img of the three kids running */ 
+  margin-left:10px;
+  float:left;
+  margin-top:4px;
+}
+.carousel-inner{
+  margin-top:20px;
+  margin-bottom:20px;
+}
+.carouselImg:hover {
+  border:6px solid rgb(100, 8, 8);
+  border-radius: 15px;
+}
+carouselImg {
+  border-radius: 15px;
+  
+}
+        /* post-its */
+  #postit1 {
+    float:left;
+    margin-left:30px;
+  }
+  #postit2 {
+    float:right;
+    margin-right:30px;
+  }
+        /* search bar */
+  #divButton { /* background of the magnifier image */
+    height:38px;
+    width:40px;
+    border-radius: 2px;
+  } 
+  /* to hide the animated buttons behind the search bar */ 
+  #father { 
+    position: relative;
+    display: flex; 
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    right: 100px;
+  }
+  #child { /* where the animated buttons live */
+    left: 50;
+    top: 5;
+    bottom: 0;
+    margin: auto;
+    margin-left: 30px;
+    position: absolute;
+    z-index: -99;
+  }
+   /* where the search box lives */
+  #divInput {
+    padding: 13px; 
+    border-top-left-radius:15px; 
+    border-bottom-left-radius:15px; 
+    padding-right: 0px; 
+    background-color: rgba(196, 79, 100, 0.644) !important;
+  } 
+  #outerDivButton {
+    height: 64px;
+  }
+  #innerDivButton{
+    height: 64px; 
+    border-bottom-right-radius: 15px; 
+    border-top-right-radius: 15px;
+  }     
+    /* search box */
+ input[type=text]  {
+    margin:0;
+    height: 30px;
+    font-size: 17px;
+    border: none;
+    font-family:'Kalam';
+    width:212px !important;
+  }
+  /* Boxes with retrieved info */
+  #infoContainer {
+    width:800px;
+    margin:0 auto;
+    margin-top:60px;
+  }
+  .pInfoContainer {
+    background-color: bisque;
+    line-height: 50px;
+    text-align: center;
+  }
+ /* Boxes with sugestions */ 
+  #sugContainer {
+    clear:both;
+  }
+  .sugFamous {
+    background-color:rgb(196, 79, 100, 0.644);
+    color:rgb(253, 247, 247);
+    text-align: center;
+  }
+  .border {
+    margin-bottom:10px;
+  }
+   /* needed for the footer */
+  footer {
+    position: fixed;
+    bottom: 0px;
+    width:100%;
+    text-align: center;
+    background:oldlace;
+    border-top:4px solid rgb(104, 53, 53);
+    vertical-align: center;
+    height:54px;
+    margin-top:20px;
+  }
+  
+  
+ /* responsive feature @ 600 */
+ @media screen and (max-width:600px)  {
+  
+  #f  {
+  height: 60px; 
+  margin:0;
+  width:60px;
+ }
+ #follAndSM {
+   width:300px;
+   text-align: justify;
+ }
+ h1 {
+  font-size: 40px;
+  width:200px;
+  padding-left: 260px !important;
+  letter-spacing: .4rem;
+ }
+
+ #postit1 img, #postit2 img {
+  width: 60px;
+  height: 60px;
+ }
+ #postit2 {
+   margin-bottom: 10px;
+ }  
+ #searchNav .container {
+  width:280px;
+  height: 60px;
+  margin-top:0;
+  margin: 10 auto; 
+ }
+ #father {
+   right:84px;
+ }
+ #child { /* where the animated buttons live */
+  top: 1;
+ } 
+ #infoContainer {
+  width:80%;
+  margin:20px auto;
+  margin-top:60px;
+ }
+}
+ /* responsive feature @ 480 */
+ @media screen and (max-width:480px)  { 
+   .fixed-top {
+     height: 80px;
+   }
+  #f  {
+   height: 40px; 
+   margin:0;
+   width:50px;
+  }
+  h1 {
+   font-size: 40px;
+   width:200px;
+   padding-left: 200px !important;
+   letter-spacing: .3rem;
+ }
+ #navInner {
+   padding:0;
+   padding-left:5px;
+ }
+ #searchNav {
+   width:260px;
+  }
+  #father { 
+    right: 76px;
+  }
+  #child { /* where the animated buttons live */
+    left: 50;
+    top: 5;
+    bottom: 10px;
+    margin: auto;
+    margin-left: 30px;
+    position: absolute;
+    z-index: -99;
+  }
+  #postit1 img, #postit2 img {
+    width: 50px;
+    height: 50px;
+   } 
+   #postit2 {
+     margin-bottom:10px;
+   }
+  #f {
+    width:50px;
+  }
+  #yt {
+    width:30px;
+  }
+  #tw,#N {
+    width:28px;
+  }
+  #infoContainer {
+    margin-top: 42px;
+  }
+ }
+/* animated search button */
+/* @import "fontawesome-free-5.3.1-web/scss/fontawesome.scss"; */
+@import url('https://fonts.googleapis.com/css?family=kalam');
+body {
+  font-family: "Kalam"; 
+}
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  filter: url('#goo');
+}
+.button {
+  font-family: "Kalam"; 
+  z-index: 99;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80px;
+  height: 40px;
+  background: linear-gradient(45deg,rgba(196, 79, 100, 0.644), rgba(117, 43, 57, 0.644));
+  color: #fff;
+  font-size: 20px;
+  letter-spacing: 1px;
+  font-weight: 200;
+}
+.social {
+  opacity: 0;
+  position: relative;
+  margin: 8px;
+  width: 40px;
+  height: 40px;
+  border-radius: 100%;
+  display: inline-block;
+  color: #fff;
+  font-size: 20px;
+  text-align: center;
+}
+.social i {
+  margin-top: 10px;
+}
+.social a {
+  color: #fff;
+}
+.twitter {
+  background: #00aced;
+}
+.facebook {
+  background: #3b5998;
+}
+.google {
+  background: #dd4b39;
+}
+.youtube {
+  background: #b00;
+}
+.clicked {
+  opacity: 1;
+  transition: 1.2s all ease;
+  transform: translateY(56px);
+}
+.contentAPI {
+  background-color: bisque ;
+  margin-bottom: 40px;
+  display: none;
+}
+.articleNYT {
+  margin:20px;
+}
+.articlenewsAPI {
+  margin:20px;
+}
+#recentNewsHeadline{
+  color: oldlace;
+  font-size: 22px;
+  text-align: center;
+}
+#resultsTwitter{
+  margin-bottom: 40px;
+}
+
+  
+ 
+  
+  
+  
+  
+ 
