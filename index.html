@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <!-- to ensure proper rendering and touch zooming in Mobil Phones -->
@@ -8,11 +7,15 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Fellowees</title>
     <!-- Favicon -->
-    <link rel="shortcut icon" href="/Project1/images/favicon.ico" type="image/x-icon">
+
     <!-- Bootstrap CDN -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
         crossorigin="anonymous">
-    <!-- Css links -->
+    <!-- Awesome Fonts CDN using CSS-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    <!-- Google Fonts API -->
+    <link href="https://fonts.googleapis.com/css?family=Shadows+Into+Light|Kalam|Permanent+Marker" rel="stylesheet"> 
+    <!-- My Css links -->
     <link rel="stylesheet" type="text/css" href="slick/slick.css" />
     <link rel="stylesheet" type="text/css" href="css/style.css" />
     <!-- Firebase Reference -->
@@ -28,9 +31,10 @@
                 <nav id="navHeader" class="navbar navbar-expand-lg navbar-light bg-light text-center">
 
                     <div id="follAndSM">
+                        <img id="tw" src="images/tweeter.jpg" width="40px" height="40px">
                         <img id="f" src="images/followers2.jpg" width="80px" height="50" alt="">
                         <img id="yt" src="images/youTube.jpg" width="40px" height="40px">
-                        <img id="tw" src="images/tweeter.jpg" width="40px" height="40px">
+                        <img id="NYT" src="images/NYT.jpg" width="40px" height="40px">
                         <img id="N" src="images/newsAPI.png" width="40px" height="40px">
                     </div>
                     <h1>Fellowees</h1>
@@ -58,18 +62,35 @@
                 <div><a class="linkCar" href="#" alt="Beyonce"><img src="images/beyonce.png" width="220px" height="220px"></a></div>
             </div>
         </div> <!-- end of carousel -->
+        
+        <div id="postit1">
+            <img src="images/arrowUp.png" width="100px" height="100px" alt="Post-it">
+        </div>    
 
         <!-- search box-->
-        <nav id="searchNav" class="navbar navbar-expand-lg navbar-light bg-light">
-            <div id="boxAndButton">
-                <form class="form-inline my-2 my-lg-0">
-                    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-                    <button type="submit"><i class="fa fa-search"></i><img id="imgButton" src="images/search-icon.png"
-                            width="30px" height="30px"></button>
+            <div id="father">
+                <form  class="form-inline my-2 my-lg-0">
+                    <div id="divInput">
+                            <input  class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                    </div>
+                    <div id="outerDivButton">
+                        <div id="innerDivButton" class="button">
+                            <div id="divButton" style="background-color: #fff; height:38px;width:38px">
+                                <img id="imgButton" src="images/search-icon.png"  width="30px" height="30px">
+                            </div>   
+                        </div>
+                    </div>
                 </form>
+                <div id="child">
+                <div class="social twitter"><i class="fa fa-twitter fa-spin"></i></div>
+                <div class="social facebook"><i class="fa fa-facebook fa-spin"></i></div>
+                <div class=" social google"><i class="fa fa-google-plus fa-spin"></i></div>
+                <div class="social youtube"><i class="fa fa-youtube fa-spin" ></i></div>
+                </div>
             </div>
-        </nav> <!-- end of search box -->
-
+           
+     <!--   </nav>  end of search box -->
+        
         <!-- container for extracted data -->
         <div id="infoContainer">
             <div class="row">
@@ -84,10 +105,11 @@
                 </div>
             </div>
         </div> <!-- end of container for extracted data -->
+        
+        <div id="postit2">
+            <img src="images/arrowDown.png" width="100px" height="100px" alt="Post-it">
+        </div> 
 
-        <span id="sugTile">
-            <h2>What about?...</h2>
-        </span>
         <!-- starts container for extracted sugestions -->
         <div id="sugContainer">
             <div class="row">
@@ -120,5 +142,4 @@
     <!-- JS Reference -->
     <script src="javascript/project1.js"></script>
 </body>
-
 </html>

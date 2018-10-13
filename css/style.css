@@ -1,40 +1,44 @@
 html, body {
   width:100%;
-  height: 100%
+  height: 100%;
+  margin:0;
 }
-
-/*header */
+        /*header */
+ .fixed-top {
+  border-bottom:4px solid rgb(104, 53, 53);  
+ }       
 header {
   width: 100%;
   margin:0;
+  height: 80px;
+  background-color: oldlace !important;
 }
-#navHeader {
-  background-color:oldlace !important;
-  height: 80px ;
-  border-bottom:4px solid rgb(104, 53, 53);
-} 
-#navHeader {
-  padding: 0 !important;
-} 
+ #navHeader {
+   width:100%;
+  background-color: oldlace !important; 
+  height: 76px;
+ } 
+
 h1 {
-  clear: both;
+  position: absolute;
+  float: left !important;
   font-size: 50px;
-  padding-left: 300px !important;
+  padding-left: 500px !important;
   font-style: italic;
-  font-family: fantasy;
+  font-family:'Permanent Marker', cursive;
   letter-spacing: 1rem;
   color:rgb(104, 53, 53);
 }
-#f {         /* img of the three kids running */ 
+#f { /* img of the three kids running */ 
   margin-left:10px;
   float:left;
   margin-top:4px;
 }
- /*---- carousel  ----*/
+        /*---- carousel  ----*/
 #carWrapper {
    width: 79.3%;
    height: 260px;
-   margin:100px auto;
+   margin:20px auto;
    margin-bottom: 0;
 }
 .imgCar  {
@@ -47,57 +51,84 @@ h1 {
 .linkCar img:hover {
   border:6px solid rgb(100, 8, 8);
   border-radius: 15px;
-
 }
 #divsCar img{
   border-radius: 15px;
 }
-  /* search bar */
+        /* post-its */
+  #postit1 {
+    float:left;
+    margin-left:30px;
+  }
+  #postit2 {
+    float:right;
+    margin-right:30px;
+  }
+        /* search bar */
+  #divButton { /* background of the magnifier image */
+    height:38px;
+    width:40px;
+    border-radius: 2px;
+  } 
+  /* to hide the animated buttons behind the search bar */ 
+  #father { 
+    position: relative;
+    display: flex; 
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    right: 100px;
+  }
+  #child { /* where the animated buttons live */
+    left: 50;
+    top: 5;
+    bottom: 0;
+    margin: auto;
+    margin-left: 30px;
+    position: absolute;
+    z-index: -99;
+  }
+   /* where the search box lives */
+  #divInput {
+    padding: 13px; 
+    border-top-left-radius:15px; 
+    border-bottom-left-radius:15px; 
+    padding-right: 0px; 
+    background-color: rgba(196, 79, 100, 0.644) !important;
+  } 
+  #outerDivButton {
+    height: 64px;
+  }
+  #innerDivButton{
+    height: 64px; 
+    border-bottom-right-radius: 15px; 
+    border-top-right-radius: 15px;
+  }     
+    /* search box */
  input[type=text]  {
     margin:0;
     height: 30px;
     font-size: 17px;
     border: none;
-  }
-  #searchNav {
-    width:280px;
-    height: 60px;
-    margin:15px auto;
-    border-radius: 10px;
-    background-color: rgba(196, 79, 100, 0.644) !important;
-    padding:0;
-    cursor: pointer;
-  }
-  #buttonSearch {
-    background-color: rgb(253, 247, 247) !important;
-  }
-  #buttonSearch:hover {
-    cursor: pointer; 
-  }
-  #boxAndButton {
-    margin:0px auto;
-  }
-  input {
-     width:212px !important;
+    font-family:'Kalam';
+    width:212px !important;
   }
   /* Boxes with retrieved info */
   #infoContainer {
     width:800px;
     margin:0 auto;
-    margin-top:15px;
+    margin-top:60px;
   }
   .pInfoContainer {
     background-color: bisque;
-    line-height: 30px;
+    line-height: 50px;
     text-align: center;
   }
  /* Boxes with sugestions */ 
-  h2 {
-    background-color: rgb(253, 247, 247);
-    color:rgb(100, 8, 8);
-    width:220px;
-    margin:15px auto;
-    text-align: center;
+  #sugContainer {
+    clear:both;
   }
   .sugFamous {
     background-color:rgba(196, 79, 100, 0.644);
@@ -107,68 +138,75 @@ h1 {
   .border {
     margin-bottom:10px;
   }
-  #imgSug:hover {
-    border:4px solid rgb(102, 56, 56); 
-    border-radius: 10px;
-    cursor: pointer;
-  }
    /* needed for the footer */
-  main {
-    width:100%;
-    height: inherit;
-    margin: 0 auto;
-  }
-  main:after {
-    content: "";
-    display: block;
-    height: 30px;
-    background:oldlace;
-  }
   footer {
     text-align: center;
     background:oldlace;
     border-top:4px solid rgb(104, 53, 53);
     vertical-align: center;
     margin-top:40px;
-    height: 30px;
+    height: 54px;
   }
   
  /* responsive feature @ 600 */
- @media screen and (max-width:600px)  { 
- #f  {
+ @media screen and (max-width:600px)  {
+  
+  #f  {
   height: 60px; 
   margin:0;
+  width:60px;
+ }
+ #follAndSM {
+   width:300px;
+   text-align: justify;
  }
  h1 {
   font-size: 40px;
   width:200px;
-  padding-left: 30px !important;
-}
-#carWrapper {
+  padding-left: 260px !important;
+  letter-spacing: .4rem;
+ }
+ #carWrapper {
   width:78%;
   height: 180px;
-  margin-top:85px;
+  margin-top:15px;
   margin-bottom:0;
-}
-#divsCar img{
+ }
+ #divsCar img{
   width: 146px;
   height: 140px;
   margin-bottom: 0;
-} 
-#searchNav {
+ } 
+ #postit1 img, #postit2 img {
+  width: 60px;
+  height: 60px;
+ }
+ #postit2 {
+   margin-bottom: 10px;
+ }  
+ #searchNav .container {
   width:280px;
   height: 60px;
-  margin:10px auto;
-  margin-top:0; 
+  margin-top:0;
+  margin: 10 auto; 
  }
+ #father {
+   right:84px;
+ }
+ #child { /* where the animated buttons live */
+  top: 1;
+ } 
  #infoContainer {
   width:80%;
-  margin:0 auto;
-  margin-top:15px;
-}
+  margin:20px auto;
+  margin-top:60px;
+ }
 }
  /* responsive feature @ 480 */
  @media screen and (max-width:480px)  { 
+   .fixed-top {
+     height: 80px;
+   }
   #f  {
    height: 40px; 
    margin:0;
@@ -177,8 +215,8 @@ h1 {
   h1 {
    font-size: 40px;
    width:200px;
-   padding-left: 10px !important;
-   letter-spacing: .5rem;
+   padding-left: 200px !important;
+   letter-spacing: .3rem;
  }
  #navInner {
    padding:0;
@@ -186,8 +224,8 @@ h1 {
  }
  #carWrapper {
    width:78%;
-   height: 150px;
-   margin-top:85px;
+   height: 120px;
+   margin-top:15px;
    margin-bottom:0;
  }
  #divsCar img{
@@ -196,10 +234,27 @@ h1 {
    margin-bottom: 0;
  } 
  #searchNav {
-   width:280px;
-   margin:10px auto;
-   margin-top:0; 
+   width:260px;
   }
+  #father { 
+    right: 76px;
+  }
+  #child { /* where the animated buttons live */
+    left: 50;
+    top: 5;
+    bottom: 10px;
+    margin: auto;
+    margin-left: 30px;
+    position: absolute;
+    z-index: -99;
+  }
+  #postit1 img, #postit2 img {
+    width: 50px;
+    height: 50px;
+   } 
+   #postit2 {
+     margin-bottom:10px;
+   }
   #f {
     width:50px;
   }
@@ -209,7 +264,73 @@ h1 {
   #tw,#N {
     width:28px;
   }
+  #infoContainer {
+    margin-top: 42px;
+  }
  }
+/* animated search button */
+/* @import "fontawesome-free-5.3.1-web/scss/fontawesome.scss"; */
+@import url('https://fonts.googleapis.com/css?family=kalam');
+body {
+  font-family: "Kalam"; 
+}
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  filter: url('#goo');
+}
+.button {
+  font-family: "Kalam"; 
+  z-index: 99;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80px;
+  height: 40px;
+  background: linear-gradient(45deg,rgba(196, 79, 100, 0.644), rgba(117, 43, 57, 0.644));
+  color: #fff;
+  font-size: 20px;
+  letter-spacing: 1px;
+  font-weight: 200;
+}
+.social {
+  opacity: 0;
+  position: relative;
+  margin: 8px;
+  width: 40px;
+  height: 40px;
+  border-radius: 100%;
+  display: inline-block;
+  color: #fff;
+  font-size: 20px;
+  text-align: center;
+}
+.social i {
+  margin-top: 10px;
+}
+.social a {
+  color: #fff;
+}
+.twitter {
+  background: #00aced;
+}
+.facebook {
+  background: #3b5998;
+}
+.google {
+  background: #dd4b39;
+}
+.youtube {
+  background: #b00;
+}
+.clicked {
+  opacity: 1;
+  transition: 1.2s all ease;
+  transform: translateY(56px);
+}
 
   
  
