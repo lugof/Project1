@@ -4,7 +4,7 @@
 // npm install socket.io --save
 // npm install twit -- save
 require('dotenv').load();
-var watchList = [];
+var watchList = ["katy perry"];
 var express = require('express')
   , app = express()
   , http = require('http')
@@ -24,7 +24,7 @@ res.sendFile(__dirname + '/index.html');
 });
 
 
-/*var config = {
+var config = {
   apiKey: "AIzaSyCLELJ2XRqID1272eMpipcMnkGzOSNMQng",
   authDomain: "project-1-440ef.firebaseapp.com",
   databaseURL: "https://project-1-440ef.firebaseio.com",
@@ -39,11 +39,13 @@ var database = firebase.database();
 database.ref("searches").limitToLast(10).on("child_added", function (childSnapshot) {
   // Store everything into a variable.
   var searchTerm = childSnapshot.val().searchTerm;
-watchList = ['Katy Perry', searchTerm ];
+  
+  watchList.push(searchTerm);
+
 
 });
-*/
-watchList = ['Katy Perry'];
+
+
 
  var T = new Twit({
     consumer_key:         process.env.CONSUMER_KEY
@@ -55,7 +57,7 @@ watchList = ['Katy Perry'];
 io.sockets.on('connection', function (socket) {
   console.log('Connected');
 
-
+  console.log("este es el watchlist: "+watchList);
  var stream = T.stream('statuses/filter', { track: watchList })
 
   stream.on('tweet', function (tweet) {
