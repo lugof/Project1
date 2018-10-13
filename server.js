@@ -1,13 +1,4 @@
-
-
-var watchList = ["sony", "canelo alvarez", "benito juarez", "katy perry"];
-for(var i=0;i<20; i++){
-  var y= document.getElementById("firebaseImg"+i).getAttribute("data-name");
-   watchList.push(y);
-   console.log("watchlist tiene: "+watchList);}
-
- 
- // To begin, run npm init, and fill out the information
+// To begin, run npm init, and fill out the information
 // To install the needed packages, run in the terminal
 // npm install express --save
 // npm install socket.io --save
@@ -33,10 +24,7 @@ res.sendFile(__dirname + '/index.html');
 });
 
 
-
-
-
-
+watchList = ["sony", "canelo alvarez", "benito juarez", "katy perry", ];
 
  var T = new Twit({
     consumer_key:         process.env.CONSUMER_KEY
