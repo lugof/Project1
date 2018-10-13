@@ -1,6 +1,6 @@
 
 // Initialize Firebase
-var searchTerm;
+
 var config = {
   apiKey: "AIzaSyCLELJ2XRqID1272eMpipcMnkGzOSNMQng",
   authDomain: "project-1-440ef.firebaseapp.com",
@@ -11,7 +11,7 @@ var config = {
 };
 firebase.initializeApp(config);
 var database = firebase.database();
-var searchTerm;
+
 
 
 function nytAPI() {
@@ -98,7 +98,7 @@ function appendArticleNewsAPI(articleData) {
 $(document).ready(function () {
   database.ref("searches").limitToLast(10).on("child_added", function (childSnapshot) {
     // Store everything into a variable.
-    searchTerm = childSnapshot.val().searchTerm;
+    var searchTerm = childSnapshot.val().searchTerm;
     var image = childSnapshot.val().firstImage;
     var title = childSnapshot.val().firstTitle;
     var link = childSnapshot.val().link;

@@ -19,7 +19,10 @@
     <!-- My Css links -->
    
     <link rel="stylesheet" type="text/css" href="./public/style.css" />
-    <script>window.twttr = (function(d, s, id) {
+    <script>
+        var watchList=[];
+        var searchTerm;
+    window.twttr = (function(d, s, id) {
             var js, fjs = d.getElementsByTagName(s)[0],
               t = window.twttr || {};
             if (d.getElementById(id)) return t;
