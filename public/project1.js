@@ -1,5 +1,6 @@
 
 // Initialize Firebase
+var searchTerm;
 var config = {
   apiKey: "AIzaSyCLELJ2XRqID1272eMpipcMnkGzOSNMQng",
   authDomain: "project-1-440ef.firebaseapp.com",
@@ -97,14 +98,14 @@ function appendArticleNewsAPI(articleData) {
 $(document).ready(function () {
   database.ref("searches").limitToLast(10).on("child_added", function (childSnapshot) {
     // Store everything into a variable.
-    var searchTerm = childSnapshot.val().searchTerm;
+    searchTerm = childSnapshot.val().searchTerm;
     var image = childSnapshot.val().firstImage;
     var title = childSnapshot.val().firstTitle;
     var link = childSnapshot.val().link;
 
     var carouselItem = $("<div>").addClass("carousel-item ").attr("id", "firebaseImg");
     carouselItem.attr("data-name",searchTerm);
-    watchList.push(searchTerm);
+    
     var carouselLink = $("<a>").attr("href", link).addClass("carouselLink");
     var carouselImage = $("<img>").attr("src", image).addClass("d-block w-100 carouselImg");
     var carouselText = $("<div>").text(title).attr("id", "recentNewsHeadline");

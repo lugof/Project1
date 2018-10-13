@@ -44,6 +44,9 @@ watchList = ['Katy Perry', searchTerm ];
 
 });
 */
+
+watchList.push(searchTerm);
+
 watchList = ['Katy Perry', "eminem", "coldplay" ];
 
  var T = new Twit({
