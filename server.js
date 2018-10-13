@@ -24,7 +24,7 @@ res.sendFile(__dirname + '/index.html');
 });
 
 
-var config = {
+/*var config = {
   apiKey: "AIzaSyCLELJ2XRqID1272eMpipcMnkGzOSNMQng",
   authDomain: "project-1-440ef.firebaseapp.com",
   databaseURL: "https://project-1-440ef.firebaseio.com",
@@ -44,8 +44,8 @@ database.ref("searches").limitToLast(10).on("child_added", function (childSnapsh
 
 
 });
-
-
+*/
+watchList.push(searchTerm);
 
  var T = new Twit({
     consumer_key:         process.env.CONSUMER_KEY
