@@ -26,3 +26,5 @@ These files are connected to a heroku server at
 * Alma Sotelo
 * Robert Lopez
 * Francisco Gonzalez
+
+Link to deployed project: https://fellaweez.herokuapp.com/
