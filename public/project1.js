@@ -102,9 +102,8 @@ $(document).ready(function () {
     var title = childSnapshot.val().firstTitle;
     var link = childSnapshot.val().link;
     
-    var carouselItem = $("<div>").addClass("carousel-item ").attr("id", "firebaseImg"+x);
-    x++;
-    carouselItem.attr("data-name",searchTerm);
+    var carouselItem = $("<div>").addClass("carousel-item ").attr("id", "firebaseImg");
+    
     var carouselLink = $("<a>").attr("href", link).addClass("carouselLink");
     var carouselImage = $("<img>").attr("src", image).addClass("d-block w-100 carouselImg");
     var carouselText = $("<div>").text(title).attr("id", "recentNewsHeadline");
